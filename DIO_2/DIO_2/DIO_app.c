@@ -1,9 +1,11 @@
-/*
- * DIO_app.c
+
+ /*
+ * DIO_app.c 
  *
- *  Created on: ??þ/??þ/????
- *      Author: Belal
- */
+ * Created: 05/6/2020 4:32:33 AM
+ *  Author: Wagdy
+ */ 
+
 #include "types.h"
 #include "DIO_interface.h"
 #include "DIO_private.h"
