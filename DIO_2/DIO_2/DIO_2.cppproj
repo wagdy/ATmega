@@ -4,23 +4,40 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>6.0</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8</ToolchainName>
-    <ProjectGuid>{a473220f-fb1a-468c-98ad-308bd53d68c8}</ProjectGuid>
-    <avrdevice>ATmega32A</avrdevice>
+    <ProjectGuid>{dadcedf2-b948-4e3e-8922-bfa17eb038ed}</ProjectGuid>
+    <avrdevice>ATmega32</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
     <Language>CPP</Language>
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>DIO</AssemblyName>
-    <Name>DIO</Name>
-    <RootNamespace>DIO</RootNamespace>
+    <AssemblyName>DIO_2</AssemblyName>
+    <Name>DIO_2</Name>
+    <RootNamespace>DIO_2</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
     <OverrideVtorValue />
     <eraseonlaunchrule>0</eraseonlaunchrule>
     <AsfVersion>3.5.0</AsfVersion>
+    <avrtoolinterface />
+    <avrtool>com.atmel.avrdbg.tool.simulator</avrtool>
+    <com_atmel_avrdbg_tool_simulator>
+      <ToolType xmlns="">com.atmel.avrdbg.tool.simulator</ToolType>
+      <ToolName xmlns="">AVR Simulator</ToolName>
+      <ToolNumber xmlns="">
+      </ToolNumber>
+      <KeepTimersRunning xmlns="">true</KeepTimersRunning>
+      <OverrideVtor xmlns="">false</OverrideVtor>
+      <OverrideVtorValue xmlns="">
+      </OverrideVtorValue>
+      <Channel xmlns="">
+        <host>127.0.0.1</host>
+        <port>50044</port>
+        <ssl>False</ssl>
+      </Channel>
+    </com_atmel_avrdbg_tool_simulator>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
@@ -80,19 +97,25 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DIO.cpp">
+    <Compile Include="DELAY.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="DIO_Compiler.h">
+    <Compile Include="DELAY_config.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="DIO_Config.h">
+    <Compile Include="DIO_2.cpp">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="DIO_Interface.h">
+    <Compile Include="DIO_config.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="DIO_Prog.c">
+    <Compile Include="DIO_interface.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DIO_private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DIO_prog.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="types.h">

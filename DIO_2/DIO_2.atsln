@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Atmel Studio Solution File, Format Version 11.00
-Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "DIO", "DIO\DIO.cppproj", "{A473220F-FB1A-468C-98AD-308BD53D68C8}"
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "DIO_2", "DIO_2\DIO_2.cppproj", "{DADCEDF2-B948-4E3E-8922-BFA17EB038ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|AVR = Release|AVR
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A473220F-FB1A-468C-98AD-308BD53D68C8}.Debug|AVR.ActiveCfg = Debug|AVR
-		{A473220F-FB1A-468C-98AD-308BD53D68C8}.Debug|AVR.Build.0 = Debug|AVR
-		{A473220F-FB1A-468C-98AD-308BD53D68C8}.Release|AVR.ActiveCfg = Release|AVR
-		{A473220F-FB1A-468C-98AD-308BD53D68C8}.Release|AVR.Build.0 = Release|AVR
+		{DADCEDF2-B948-4E3E-8922-BFA17EB038ED}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DADCEDF2-B948-4E3E-8922-BFA17EB038ED}.Debug|AVR.Build.0 = Debug|AVR
+		{DADCEDF2-B948-4E3E-8922-BFA17EB038ED}.Release|AVR.ActiveCfg = Release|AVR
+		{DADCEDF2-B948-4E3E-8922-BFA17EB038ED}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

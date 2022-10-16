@@ -1,15 +1,16 @@
 /*
- * DIO_Config.h
+ * DIO_config.h 
  *
- * Created: 10/7/2022 3:56:28 AM
- *  Author: W&N
+ * Created: 05/6/2020 4:32:33 AM
+ *  Author: Wagdy
  */ 
-
 
 #ifndef DIO_CONFIG_H_
 #define DIO_CONFIG_H_
 
-#define    DIO_u8PIN_INITDIR0			DIO_u8OUTPUT //1
+/*Comment!: PIN initial direction*/
+/*Range!: DIO_u8INPUT~DIO_u8OUTPUT*/
+#define    DIO_u8PIN_INITDIR0			DIO_u8INPUT
 #define    DIO_u8PIN_INITDIR1			DIO_u8INPUT
 #define    DIO_u8PIN_INITDIR2			DIO_u8INPUT
 #define    DIO_u8PIN_INITDIR3			DIO_u8INPUT
@@ -25,14 +26,14 @@
 #define    DIO_u8PIN_INITDIR13          DIO_u8INPUT
 #define    DIO_u8PIN_INITDIR14          DIO_u8INPUT
 #define    DIO_u8PIN_INITDIR15          DIO_u8INPUT
-#define    DIO_u8PIN_INITDIR16          DIO_u8OUTPUT
-#define    DIO_u8PIN_INITDIR17          DIO_u8OUTPUT
-#define    DIO_u8PIN_INITDIR18          DIO_u8OUTPUT
-#define    DIO_u8PIN_INITDIR19          DIO_u8OUTPUT
-#define    DIO_u8PIN_INITDIR20          DIO_u8OUTPUT
-#define    DIO_u8PIN_INITDIR21          DIO_u8OUTPUT
-#define    DIO_u8PIN_INITDIR22          DIO_u8OUTPUT
-#define    DIO_u8PIN_INITDIR23          DIO_u8OUTPUT
+#define    DIO_u8PIN_INITDIR16          DIO_u8INPUT
+#define    DIO_u8PIN_INITDIR17          DIO_u8INPUT
+#define    DIO_u8PIN_INITDIR18          DIO_u8INPUT
+#define    DIO_u8PIN_INITDIR19          DIO_u8INPUT
+#define    DIO_u8PIN_INITDIR20          DIO_u8INPUT
+#define    DIO_u8PIN_INITDIR21          DIO_u8INPUT
+#define    DIO_u8PIN_INITDIR22          DIO_u8INPUT
+#define    DIO_u8PIN_INITDIR23          DIO_u8INPUT
 #define    DIO_u8PIN_INITDIR24			DIO_u8INPUT
 #define    DIO_u8PIN_INITDIR25          DIO_u8INPUT
 #define    DIO_u8PIN_INITDIR26          DIO_u8INPUT
@@ -42,6 +43,8 @@
 #define    DIO_u8PIN_INITDIR30          DIO_u8INPUT
 #define    DIO_u8PIN_INITDIR31          DIO_u8INPUT
 
+/*Comment!: PIN initial value*/
+/*Range!: DIO_u8LOW~DIO_u8HIGH*/
 
 
 #define    DIO_u8PIN_INITVAL0			DIO_u8LOW
@@ -66,7 +69,7 @@
 #define    DIO_u8PIN_INITVAL19          DIO_u8LOW
 #define    DIO_u8PIN_INITVAL20          DIO_u8LOW
 #define    DIO_u8PIN_INITVAL21          DIO_u8LOW
-#define    DIO_u8PIN_INITVAL22          DIO_u8LOW
+#define    DIO_u8PIN_INITVAL22          DIO_u8HIGH
 #define    DIO_u8PIN_INITVAL23          DIO_u8LOW
 #define    DIO_u8PIN_INITVAL24			DIO_u8LOW
 #define    DIO_u8PIN_INITVAL25          DIO_u8LOW
@@ -78,3 +81,4 @@
 #define    DIO_u8PIN_INITVAL31          DIO_u8LOW
 
 #endif /* DIO_CONFIG_H_ */
+

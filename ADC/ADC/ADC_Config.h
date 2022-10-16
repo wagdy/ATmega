@@ -35,13 +35,14 @@ ADPS2:0 ( Prescaler Selection) Freq/128 (111)
 #ifndef ADC_CONFIG_H_
 #define ADC_CONFIG_H_
 
-
+/*ADMUX Config*/
 #define ADC_REFERENCE AVCC
 
-#define ADC_RESULT	LEFT_ADJSUTED
+#define ADC_RESULT	RIGHT_ADJSUTED
 
-#define ADC_CHANNEL ADC0
-
+#define ADC_CHANNEL ADC1
+/********************************************/
+/*ADSRA Config*/
 #define ADC_CHANNELMODE SINGLE_ENDED_INPUT
 
 #define ADC_PRESCALER         ADC_PRESCAL16

@@ -79,3 +79,18 @@ extern void ADC_ReadOneTime(u16 *PtrToVal)
 	return;
 }
 
+extern void ADC_voidReadMulShot(u16 *Copy_ptrToVal){
+	u16 Local_u16Result;
+	u8 Local_u8Counter;
+	for (Local_u8Counter = 0; Local_u8Counter < 8 ;Local_u8Counter++) {
+
+		ADC_ReadOneTime(&Local_u16Result);
+		*Copy_ptrToVal+=Local_u16Result;
+
+	}
+	*Copy_ptrToVal/=8;
+
+	return ;
+
+}
+

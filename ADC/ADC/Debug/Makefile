@@ -36,7 +36,9 @@ SUBDIRS :=
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
 ../ADC.cpp \
-../ADC_p.c
+../ADC_p.c \
+../DIO_prog.c \
+../LCD_16x2_H_file.c
 
 
 PREPROCESSING_SRCS += 
@@ -47,22 +49,30 @@ ASM_SRCS +=
 
 OBJS +=  \
 ADC.o \
-ADC_p.o
+ADC_p.o \
+DIO_prog.o \
+LCD_16x2_H_file.o
 
 
 OBJS_AS_ARGS +=  \
 ADC.o \
-ADC_p.o
+ADC_p.o \
+DIO_prog.o \
+LCD_16x2_H_file.o
 
 
 C_DEPS +=  \
 ADC.d \
-ADC_p.d
+ADC_p.d \
+DIO_prog.d \
+LCD_16x2_H_file.d
 
 
 C_DEPS_AS_ARGS +=  \
 ADC.d \
-ADC_p.d
+ADC_p.d \
+DIO_prog.d \
+LCD_16x2_H_file.d
 
 
 OUTPUT_FILE_PATH +=ADC.elf
@@ -74,6 +84,10 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
+
+
 
 
 

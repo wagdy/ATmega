@@ -12,8 +12,8 @@
 extern void ADCEnable();
 extern void	ADCDisAble();
 extern void ADC_Config();
-extern void ADC_ReadOneTime();
-extern void	ADC_ReadMultiTime();
+extern void ADC_ReadOneTime(u16 *Copy_ptrToVal);
+extern void	ADC_voidReadMulShot(u16 *Copy_ptrToVal);
 
 
 
